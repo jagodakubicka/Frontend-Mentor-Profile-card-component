@@ -1,0 +1,85 @@
+@import url('https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap');
+
+*,
+*::before,
+*::after {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: hsl(185, 75%, 39%);
+  background-image: url(/images/bg-pattern-top.svg),
+    url(/images/bg-pattern-bottom.svg);
+  background-position: calc(50% - 450px) calc(50% + 50px), 50vw 50vh;
+  background-repeat: no-repeat;
+  font-size: 18px;
+  font-family: 'Kumbh Sans', sans-serif;
+  padding: 4em;
+}
+
+.container {
+  background-color: white;
+  border-radius: 20px;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.images {
+  position: relative;
+}
+#card-bg {
+  border-radius: 20px 20px 0 0;
+}
+.name-id {
+  padding-top: 4em;
+  text-align: center;
+}
+.name-id h1 {
+  font-size: 20px;
+  color: hsl(229, 23%, 23%);
+  font-weight: 700;
+}
+#age {
+  color: hsl(0, 0%, 59%);
+  font-weight: 400;
+}
+.name-id p {
+  color: hsl(0, 0%, 59%);
+  padding-top: 0.5em;
+  padding-bottom: 1.5em;
+  font-size: 15px;
+}
+#user-img {
+  position: absolute;
+  border-radius: 50%;
+  border: 5px solid white;
+  left: calc(50% - 96px / 2);
+  top: 58%;
+}
+.data {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 1em;
+  padding: 1.5em;
+  padding-top: 1.5em;
+  border-top: 1px solid hsl(240, 17%, 95%);
+}
+.data h4 {
+  color: hsl(229, 23%, 23%);
+  font-weight: 700;
+}
+.data p {
+  padding-bottom: 0;
+  font-size: 11px;
+  letter-spacing: 1.5px;
+}
+.attribution {
+  font-size: 15px;
+  text-align: center;
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
